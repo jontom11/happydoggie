@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+  background-color: #f0f0f0;
+  font-family: 'Ubuntu', sans-serif;
+
+}
+
+#puppyViewer {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#clicker {
+  background-color: #eee;
+}
+
+#button {
+  margin: auto;
+  background-color: pink;
+  margin: 50px;
+  padding: 40px;
+  border: solid black 3px;
+  border-radius: 20%;
+  font-size: 200%;
+  outline: none;
+}
+
+#button:hover {
+  background-color: lightcoral;
+}
+
+#button:active {
+  background-color: palevioletred;
+}
