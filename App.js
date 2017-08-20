@@ -15,14 +15,12 @@ let dog9 = 'http://stories.barkpost.com/wp-content/uploads/2015/01/corgi2.jpg';
 
 let dogs = [zach, skippy, roxy, butter, dog1, dog2, dog3, dog4, dog5, dog6, dog7, dog8, dog9];
 let puppyViewer = document.getElementById('puppyViewer');
-console.log(puppyViewer)
 
 let timeout = (url, i)=> setTimeout(( ()=>puppyViewer.src=url ), i * 1000);
 
 dogs.forEach( (val, i) => timeout(dogs[i], i+1) );
 setInterval(() => {
-  dogs.forEach( (val, i) => timeout(dogs[i], i+1) )}
-  , dogs.length * 1000
-  )
+  dogs.forEach( (val, i) => timeout(dogs[i], i+1) )
+}, dogs.length * 1000
+)
 
-console.log('hello')
